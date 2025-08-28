@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- 2. Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header Section -->
+    <!-- ===================================== -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="text-xl font-bold italic text-blue-600">MyLogo</div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-6 text-gray-700">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">About</a>
+          <a href="#" class="hover:text-blue-600">Projects</a>
+          <a href="#" class="hover:text-blue-600">Contact</a>
+        </nav>
+
+        <!-- Hire Me Button -->
+        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Hire Me</a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- ===================================== -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+      <!-- Welcome Heading -->
+      <h1 class="text-4xl font-bold italic text-center text-black-600 mb-10">"Welcome to My Portfolio"</h1>
+
+      <!-- About Me Section -->
+      <!-- ------------------- -->
+      <section class="mb-16">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <div class="md:flex items-center gap-8">
+          <img src="images.jpg" alt="My Photo" class="rounded shadow w-52 mb-4 md:mb-0" />
+          <p class="text-lg">
+            Hi! I'm a passionate web developer with experience in creating responsive and user-friendly websites using HTML, CSS, and Tailwind. I love learning new technologies and bringing ideas to life.
+          </p>
+        </div>
+      </section>
+
+      <!-- My Projects Section -->
+      <!-- ------------------- -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-6">My Projects</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <div class="bg-white shadow rounded p-4">
+            <img src="pexels-souvenirpixels-414612.jpg" alt="Project 1" class="rounded mb-3 " />
+            <h3 class="text-xl font-bold mb-2">Project One</h3>
+            <p>This is a short description of the first project, showcasing Tailwind design and layout.</p>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-white shadow rounded p-4">
+            <img src="istockphoto-1344939844-612x612.jpg" alt="Project 2" class="rounded mb-3" />
+            <h3 class="text-xl font-bold mb-2">Project Two</h3>
+            <p>This is a short description of the second project, which involved animations and responsive features.</p>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="bg-white shadow rounded p-4">
+            <img src="photo-1526779259212-939e64788e3c.jpg" alt="Project 3" class="rounded mb-3" />
+            <h3 class="text-xl font-bold mb-2">Project Three</h3>
+            <p>This is a short description of the third project, focused on interactivity and design consistency.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Form Section -->
+    <!-- ===================================== -->
+    <section id="contact" class="bg-white py-12 px-4">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Contact Me</h2>
+        <form action="thankyou.html" method="GET" class="space-y-4">
+          <div>
+            <label class="block mb-1">Name</label>
+            <input type="text" name="name" required class="w-full border border-gray-300 p-2 rounded" />
+          </div>
+          <div>
+            <label class="block mb-1">Email</label>
+            <input type="email" name="email" required class="w-full border border-gray-300 p-2 rounded" />
+          </div>
+          <div>
+            <label class="block mb-1">Message</label>
+            <textarea name="message" required rows="4" class="w-full border border-gray-300 p-2 rounded"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- ===================================== -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+      <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6">
+          <a href="#" class="hover:text-black-400">Facebook</a>
+          <a href="#" class="hover:text-black-400">Twitter</a>
+          <a href="#" class="hover:text-black-400">LinkedIn</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="flex justify-center space-x-6">
+          <a href="#" class="hover:text-black-400">Home</a>
+          <a href="#" class="hover:text-black-400">About</a>
+          <a href="#" class="hover:text-black-400">Projects</a>
+          <a href="#" class="hover:text-black-400">Contact</a>
+        </div>
+
+        <p class="text-sm text-gray-400">© 2025 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
